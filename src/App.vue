@@ -14,11 +14,6 @@ export default {
       store
     }
   },
-  methods: {
-    propsCallback(){
-       console.log("HHHHH");
-    }
-  }
 }
 </script>
 
