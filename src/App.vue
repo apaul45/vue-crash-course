@@ -27,7 +27,13 @@ export default {
       <span v-else>short.</span>
     </p>
   </div>
-  <HelloWorld msg="Hello" comp_id="1"/>
+  <!-- A parent component can pass down template fragment(s) to its child
+  through treating it like a html tag-- ie, including content between 
+  a open and closed tag. The child can then render this fragment through 
+  including the <slot> </slot> tag in their template -->
+  <HelloWorld msg="Hi" comp_id="1">
+    This was rendered for me by my parent component!
+  </HelloWorld>
 </template>
 
 
