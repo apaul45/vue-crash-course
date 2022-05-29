@@ -1,14 +1,16 @@
 <script>
 //Can include child components by importing them into the parent comp
 import HelloWorld from './components/HelloWorld.vue';
+import CompositionComp from './components/CompositionComp.vue';
 import {store} from './main.js';
 
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  },
+    HelloWorld,
+    CompositionComp,
+},
   data(){
     return {
       store
@@ -34,6 +36,7 @@ export default {
   <HelloWorld msg="Hi" comp_id="1">
     This was rendered for me by my parent component!
   </HelloWorld>
+  <CompositionComp />
 </template>
 
 
